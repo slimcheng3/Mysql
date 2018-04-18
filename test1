@@ -1,0 +1,31 @@
+#建立数据库
+CREATE DATABASE gradesystem;
+#连接数据库
+USE gradesystem;
+#建立学生table
+CREATE TABLE student
+(sid int(10) PRIMARY KEY AUTO_INCREMENT,
+ sname char(12) NOT NULL,
+ gender enum('male','female') NOT NULL
+ );
+ #建立course表
+ CREATE TABLE course
+ (cid int(10) PRIMARY KEY AUTO_INCREMENT,
+  cname char(12) NOT NULL
+  );
+  #建立mark表
+  CREATE TABLE course 
+  (
+  mid int(10) PRIMARY KEY AUTO_INCREMENT, 
+  cname char(12)，
+  sid int
+  );
+ 
+
+
+
+
+
+
+
+
