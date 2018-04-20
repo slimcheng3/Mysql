@@ -16,20 +16,10 @@ CREATE TABLE student
   #建立mark表
   CREATE TABLE mark 
   (
-  mid int(10) PRIMARY KEY AUTO_INCREMENT, 
+  mid int(10) PRIMARY KEY AUTO_INCREMENT,
   sid int(10) NOT NULL,
   cid int(10) NOT NULL,
   score int(10) NOT NULL,
-  CONSTRAINT sid_m FOREIGN KEY (sid) REFERENCES student(sid),
-  CONSTRAINT cid_m FOREIGN KEY (cid) REFERENCES course(cid)
-  );
-  INSERT INTO student(sname,gender) values('tom','male');
-  INSERT INTO student(sname,gender) values('jack','male');
-  INSERT INTO student(sname,gender) values('rose','female');
-  INSERT INTO course(cname) values('math');
-  INSERT INTO course(cname) values('physics');
-  INSERT INTO course(cname) values('chemistry');
-    score int(10) NOT NULL,
   CONSTRAINT sid_m FOREIGN KEY (sid) REFERENCES student(sid),
   CONSTRAINT cid_m FOREIGN KEY (cid) REFERENCES course(cid)
   );
